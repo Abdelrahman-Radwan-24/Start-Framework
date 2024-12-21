@@ -1,0 +1,67 @@
+<section
+  class="d-flex justify-content-center align-items-center flex-column mt-3"
+>
+  <app-star
+    [dataFromParent]="titleContact"
+    [customColor]="colorContact"
+  ></app-star>
+  <form class="w-50 my-5 ">
+    <label
+      [class.top-40]="!userName.length"
+      for="userName"
+      class="text-sec ms-3 my-2 position-relative top-0"
+      >userName :</label
+    >
+    <input
+      [(ngModel)]="userName"
+      id="userName"
+      name="userName"
+      type="text"
+      placeholder="userName"
+      class="form-control shadow-none border-top-0 border-end-0 border-start-0 my-2 p-3 position-relative"
+    />
+    <label
+      [class.top-40]="!userAge"
+      for="userAge"
+      class="text-sec ms-3 my-2 position-relative top-0"
+      >userAge :</label
+    >
+    <input
+      [(ngModel)]="userAge"
+      id="userAge"
+      name="userAge"
+      type="number"
+      placeholder="userAge"
+      class="form-control shadow-none border-top-0 border-end-0 border-start-0 my-2 p-3 position-relative"
+    />
+    <label
+      [class.top-40]="!userEmail"
+      for="userEmail"
+      class="text-sec ms-3 my-2 position-relative top-0"
+      >userEmail :</label
+    >
+    <input
+      [(ngModel)]="userEmail"
+      id="userEmail"
+      name="userEmail"
+      type="email"
+      placeholder="userEmail"
+      class="form-control shadow-none border-top-0 border-end-0 border-start-0 my-2 p-3 position-relative"
+    />
+    <label
+      [class.top-40]="!userPassword"
+      for="userPassword"
+      class="text-sec ms-3 my-2 position-relative top-0"
+      >userPassword :</label
+    >
+    <input
+      [(ngModel)]="userPassword"
+      id="userPassword"
+      name="userPassword"
+      type="password"
+      placeholder="userPassword"
+      class="form-control shadow-none border-top-0 border-end-0 border-start-0 my-2 p-3 position-relative"
+    />
+    <button type="submit" class="btn-main mt-3">Send Message</button>
+  </form>
+</section>

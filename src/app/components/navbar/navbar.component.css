@@ -1,0 +1,18 @@
+nav {
+  transition: all 0.6s;
+}
+
+.active {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+nav ul li a {
+  width: fit-content;
+}
+
+@media (max-width: 764px) {
+  nav ul li a {
+    margin-block: 10px;
+  }
+}

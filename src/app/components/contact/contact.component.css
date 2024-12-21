@@ -1,0 +1,24 @@
+.form-control:focus {
+  border-color: #dee;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  display: none;
+  appearance: none;
+}
+
+.top-40 {
+  top: 40px !important;
+}
+
+label {
+  transition: all 0.6s;
+}
+
+@media (max-width: 750px) {
+  form {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,13 @@
+ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding-block: 85px;
+}
